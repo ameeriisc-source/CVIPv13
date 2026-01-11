@@ -169,3 +169,13 @@ footer { background: #1a1a1a; color: #ccc; padding: 50px 8% 20px; font-size: 0.9
     body { padding-top: 220px; }
     .hero-slider { height: 70vh; }
 }
+/* Add this to the bottom of assets/css/style.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fixes the anchor scrolling issue by adding a top offset */
+:target {
+    scroll-margin-top: 150px; /* 80px nav + 40px marquee + 30px buffer */
+}
