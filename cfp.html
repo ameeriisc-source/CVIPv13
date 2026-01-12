@@ -5,40 +5,127 @@
     <title>Call for Papers | CVIP 2026</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/main.js"></script>
+    <style>
+        /* --- ACKNOWLEDGMENT & SUBMISSION STYLES --- */
+.acknowledgment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background-color: #fff;
+}
+
+.submission-card {
+    background-color: #e0f4ff; /* Light blue from screenshot */
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.submission-card .card-header {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #001f3f;
+}
+
+.submission-card p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.portal-date {
+    font-size: 1.2rem !important;
+    margin-bottom: 25px !important;
+}
+
+.btn-portal {
+    background-color: #007bff; /* Vibrant blue button */
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.btn-portal:hover {
+    background-color: #0056b3;
+}
+
+.acknowledgment-content {
+    max-width: 900px;
+    text-align: left;
+}
+
+.acknowledgment-content .section-title {
+    text-align: left;
+    margin-left: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.acknowledgment-content .section-title::after {
+    margin: 15px 0 0; /* Align underline to left */
+}
+
+.acknowledgment-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .submission-card {
+        padding: 25px;
+    }
+    .submission-card .card-header {
+        font-size: 1.6rem;
+    }
+}
+    </style>
 </head>
 <body>
 <nav class="navbar">
-    <div class="logo">CVIP 2026</div>
-    <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        
-        <li>
-            <a href="committee.html" class="dropbtn">Committee</a>
-            <ul class="dropdown-content">
-                <li><a href="committee.html">Organizing Committee</a></li>
-                <li><a href="committee.html#steering">Steering Committee</a></li>
-                <li><a href="advisory.html">Advisory Committee</a></li>
-            </ul>
-        </li>
+        <div class="logo">CVIP 2026</div>
 
-        <li><a href="cfp.html">CFP</a></li>
-        <li><a href="venue.html">Venue</a></li>
-        <li><a href="important-dates.html">Dates</a></li>
-        <li><a href="registration.html">Registration</a></li>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <li>
-            <a href="#" class="dropbtn">Archive</a>
-            <ul class="dropdown-content">
-                <li><a href="https://link.springer.com/conference/cvip" target="_blank">Past Proceedings (Springer)</a></li>
-                <li><a href="https://iitrpr.ac.in/cvip2025" target="_blank">CVIP 2025 (IIT Ropar)</a></li>
-                <li><a href="#" target="_blank">CVIP 2024 (IIITDM Kancheepuram)</a></li>
-                <li><a href="#" target="_blank">CVIP 2023 (IIT Jammu)</a></li>
-                <li><a href="#" target="_blank">CVIP 2022 (VNIT Nagpur)</a></li>
-                <li><a href="#" target="_blank">CVIP 2021 (IIT Ropar)</a></li>
-            </ul>
-        </li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li>
+                <a href="committee.html" class="dropbtn">Committee</a>
+                <ul class="dropdown-content">
+                    <li><a href="committee.html">Organizing Committee</a></li>
+                    <li><a href="committee.html#steering">Steering Committee</a></li>
+                    <li><a href="advisory.html">Advisory Committee</a></li>
+                </ul>
+            </li>
+
+            <li><a href="cfp.html">Call for Papers</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="important-dates.html">Dates</a></li>
+            <li><a href="registration.html">Registration</a></li>
+
+    
+            <li>
+                <a href="#" class="dropbtn">Archive</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://link.springer.com/conference/cvip" >Past Proceedings (Springer)</a></li>
+                    <li><a href="https://iitrpr.ac.in/cvip2025" >CVIP 2025 (IIT Ropar)</a></li>
+                    <li><a href="https://cvip2024.iiitdm.ac.in/" >CVIP 2024 (IIITDM Kancheepuram)</a></li>
+                    <li><a href="https://iitjammu.ac.in/cvip2023/" >CVIP 2023 (IIT Jammu)</a></li>
+                    <li><a href="https://vnit.ac.in/cvip2022/index.php" >CVIP 2022 (VNIT Nagpur)</a></li>
+                </ul>   
+            </li>
+        </ul>
 </nav>
 <div class="marquee"><div class="marquee-content">📢 Paper submission opens soon! &nbsp;&bull;&nbsp; 📅 Dec 9–12, 2026 &nbsp;&bull;&nbsp; 📍 Jointly Organized by NIT Calicut & NTNU Norway</div></div>
 
@@ -71,6 +158,24 @@
                 <li>🔹 Hardware and Architectures for Vision</li>
             </ul>
         </div>
+    </div>
+</section>
+
+<section class="section acknowledgment-section">
+    <div class="submission-card reveal-text">
+        <h2 class="card-header">Submission Portal</h2>
+        <p>Authors can submit their papers through Microsoft CMT online submission system.</p>
+        <p class="portal-date"><strong>Portal opens:</strong> 07 October 2025</p>
+        <a href="#" class="btn btn-portal">Go to Submission Portal</a>
+    </div>
+
+    <div class="acknowledgment-content reveal-text">
+        <h2 class="section-title">Acknowledgment</h2>
+        <p>
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. 
+            This service was provided for free by Microsoft and they bore all expenses, including costs 
+            for Azure cloud services as well as for software development and support.
+        </p>
     </div>
 </section>
 <footer>© 2026 CVIP Conference.</footer>
