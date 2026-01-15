@@ -131,7 +131,6 @@ a:hover {
     border-radius: 0 0 4px 4px;
 }
 
-/* Adjust dropdown position for items on the right side */
 .nav-links > li:nth-last-child(-n+3) .dropdown-content {
     left: auto;
     right: 0;
@@ -163,12 +162,10 @@ a:hover {
     padding-left: 20px;
 }
 
-/* Show Dropdown on Hover */
 .nav-links > li:hover .dropdown-content {
     display: block;
 }
 
-/* Dropdown arrow indicator */
 .dropbtn::after {
     content: ' ▼';
     font-size: 0.65em;
@@ -303,4 +300,59 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-top-left-radius: 8px;
-    border-top-right-radius:
+    border-top-right-radius: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.theme-image {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* General & Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: var(--secondary-color);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #bf360c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+.section {
+    padding: 60px 8%;
+    width: 100%;
+}
+
+.
