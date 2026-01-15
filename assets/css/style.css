@@ -1,97 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call for Papers | CVIP 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+    <style>
+        /* --- ACKNOWLEDGMENT & SUBMISSION STYLES --- */
+        .acknowledgment-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            background-color: #fff;
+        }
 
-:root {
-    --primary-color: #003366;
-    --secondary-color: #e65100;
-    --text-color: #333;
-    --nav-bg: #002244;
-    --white: #ffffff;
-    --nav-height: 80px;
-    --marquee-height: 40px;
-}
+        .submission-card {
+            background-color: #e0f4ff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .submission-card .card-header {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #001f3f;
+        }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
-    background-color: var(--white);
-    padding-top: calc(var(--nav-height) + var(--marquee-height));
-    overflow-x: hidden;
-    width: 100%;
-}
+        .submission-card p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
 
-h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
+        .portal-date {
+            font-size: 1.2rem !important;
+            margin-bottom: 25px !important;
+        }
 
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
-}
+        .btn-portal {
+            background-color: #007bff;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
 
-a:hover {
-    color: var(--secondary-color);
-}
+        .btn-portal:hover {
+            background-color: #0056b3;
+        }
 
-/* --- ANIMATIONS --- */
-.reveal-text {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
-}
+        .acknowledgment-content {
+            max-width: 900px;
+            text-align: left;
+        }
 
-.reveal-text.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+        .acknowledgment-content .section-title {
+            text-align: left;
+            margin-left: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-/* --- NAVBAR --- */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--nav-bg);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 1000;
-    padding: 0 3%;
-    height: var(--nav-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .acknowledgment-content .section-title::after {
+            margin: 15px 0 0; /* Align underline to left */
+        }
 
-.logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 1px;
-    white-space: nowrap;
-    font-family: 'Montserrat', sans-serif;
-}
+        .acknowledgment-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+        }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
-}
+        /* Responsive Columns for Topics List */
+        .topics-list-container {
+            columns: 2;
+            column-gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+        }
+        
+        @media (max-width: 768px) {
+            .submission-card {
+                padding: 25px;
+            }
+            .submission-card .card-header {
+                font-size: 1.6rem;
+            }
+            .topics-list-container {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+        <div class="logo">CVIP 2026</div>
 
-.nav-links > li {
-    position: relative;
-}
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-.nav-links li a {
-    font-weight: 500;
-    font-size: 1rem;
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li>
+                <a href="committee.html" class="dropbtn">Committee</a>
+                <ul class="dropdown-content">
+                    <li><a href="committee.html">Organizing Committee</a></li>
+                    <li><a href="committee.html#steering">Steering Committee</a></li>
+                    <li><a href="advisory.html">Advisory Committee</a></li>
+                </ul>
+            </li>
+
+            <li><a href="cfp.html">Call for Papers</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="important-dates.html">Dates</a></li>
+            <li><a href="registration.html">Registration</a></li>
+
+    
+            <li>
+                <a href="#" class="dropbtn">Archive</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://link.springer.com/conference/cvip" >Past Proceedings (Springer)</a></li>
+                    <li><a href="https://iitrpr.ac.in/cvip2025" >CVIP 2025 (IIT Ropar)</a></li>
+                    <li><a href="https://cvip2024.iiitdm.ac.in/" >CVIP 2024 (IIITDM Kancheepuram)</a></li>
+                    <li><a href="https://iitjammu.ac.in/cvip2023/" >CVIP 2023 (IIT Jammu)</a></li>
+                    <li><a href="https://vnit.ac.in/cvip2022/index.php" >CVIP 2022 (VNIT Nagpur)</a></li>
+                </ul>   
+            </li>
+        </ul>
+</nav>
+<div class="marquee"><div class="marquee-content">📢 Paper submission opens soon! &nbsp;&bull;&nbsp; 📅 Dec 9–12, 2026 &nbsp;&bull;&nbsp; 📍 Jointly Organized by NIT Calicut & NTNU Norway</div></div>
+
+<div class="page-hero"><h1>Call For Papers</h1></div>
+
+<section class="section">
+    <h2 class="section-title reveal-text">Topics of Interest</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto 20px;" class="reveal-text">
+        CVIP 2026 invites original research contributions. Proceedings will be published in <strong>Springer LNCS</strong>.
+    </p>
+
+    <p style="text-align:center; max-width:900px; margin:0 auto 30px; font-weight:500;" class="reveal-text">
+        Topics of interest cover all aspects of computer vision and image processing including, but not limited to:
+    </p>
+
+    <div class="reveal-text topics-list-container">
+        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
+            <li>AI-Powered Image Analysis / Computer Vision</li>
+            <li>Biometrics, Forensics, Content Protection</li>
+            <li>Compressed Image/ Video Analytics</li>
+            <li>Computational Imaging</li>
+            <li>Datasets and Evaluation</li>
+            <li>Deep Learning for Computer Vision</li>
+            <li>Document and Synthetic Visual Processing</li>
+            <li>Document Image Analysis</li>
+            <li>Explainable AI / Gen AI for Computer Vision</li>
+            <li>Face, Iris, Emotion, Sign Language and Gesture Recognition</li>
+            <li>Human Computer Interaction</li>
+            <li>Image Restoration/Super Resolution</li>
+            <li>Image/ Video Processing for Autonomous Vehicles / Motion / Tracking</li>
+            <li>Image/ Video Retrieval / Forensics</li>
+            <li>Image/ Video Scene Understanding</li>
+            <li>Image/ Video Security and Quality Assessment</li>
+            <li>Medical Image Analysis</li>
+            <li>Pattern Recognition / Activity Detection</li>
+            <li>Quantum Computer Vision</li>
+            <li>Remote Sensing, Hyperspectral Image Processing</li>
+            <li>Segmentation and Shape Representation</li>
+            <li>Vision based Human Gait Analysis</li>
+            <li>Visual Sensor Hardware, Visual Surveillance</li>
+            <li>3D/X-ray/Thermal Image/Video Processing</li>
+        </ul>
+    </div>
+
+    <div class="reveal-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <div class="group-title" style="display: inline-block; padding: 10px 30px;">Technical Tracks</div>
+        <ul style="list-style: none; line-height: 2.2; padding-left: 0; margin-top: 20px;">
+            <li>✅ AI / Machine Learning for CV & IP</li>
+            <li>✅ Computational Imaging and Emerging Technologies</li>
+            <li>✅ Computer Vision / Pattern Recognition</li>
+            <li>✅ Image / Video Processing</li>
+            <li>✅ Image Biometrics / Forensics</li>
+            <li>✅ Medical / Remote Sensing Applications</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section acknowledgment-section">
+    <div class="submission-card reveal-text">
+        <h2 class="card-header">Submission Portal</h2>
+        <p>Authors can submit their papers through Microsoft CMT online submission system.</p>
+        <p class="portal-date"><strong>Portal opens:</strong> Will be Updated Soon</p>
+        <a href="#" class="btn btn-portal">Go to Submission Portal</a>
+    </div>
+
+    <div class="acknowledgment-content reveal-text">
+        <h2 class="section-title">Acknowledgment</h2>
+        <p>
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. 
+            This service was provided for free by Microsoft and they bore all expenses, including costs 
+            for Azure cloud services as well as for software development and support.
+        </p>
+    </div>
+</section>
+<footer>© 2026 CVIP Conference.</footer>
+</body>
+</html>
