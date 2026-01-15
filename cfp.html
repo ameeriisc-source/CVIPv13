@@ -7,83 +7,94 @@
     <script defer src="assets/js/main.js"></script>
     <style>
         /* --- ACKNOWLEDGMENT & SUBMISSION STYLES --- */
-.acknowledgment-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    background-color: #fff;
-}
+        .acknowledgment-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            background-color: #fff;
+        }
 
-.submission-card {
-    background-color: #e0f4ff; /* Light blue from screenshot */
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 700px;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
+        .submission-card {
+            background-color: #e0f4ff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
 
-.submission-card .card-header {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #001f3f;
-}
+        .submission-card .card-header {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #001f3f;
+        }
 
-.submission-card p {
-    font-size: 1.1rem;
-    color: #444;
-    margin-bottom: 15px;
-}
+        .submission-card p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
 
-.portal-date {
-    font-size: 1.2rem !important;
-    margin-bottom: 25px !important;
-}
+        .portal-date {
+            font-size: 1.2rem !important;
+            margin-bottom: 25px !important;
+        }
 
-.btn-portal {
-    background-color: #007bff; /* Vibrant blue button */
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-}
+        .btn-portal {
+            background-color: #007bff;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
 
-.btn-portal:hover {
-    background-color: #0056b3;
-}
+        .btn-portal:hover {
+            background-color: #0056b3;
+        }
 
-.acknowledgment-content {
-    max-width: 900px;
-    text-align: left;
-}
+        .acknowledgment-content {
+            max-width: 900px;
+            text-align: left;
+        }
 
-.acknowledgment-content .section-title {
-    text-align: left;
-    margin-left: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+        .acknowledgment-content .section-title {
+            text-align: left;
+            margin-left: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-.acknowledgment-content .section-title::after {
-    margin: 15px 0 0; /* Align underline to left */
-}
+        .acknowledgment-content .section-title::after {
+            margin: 15px 0 0; /* Align underline to left */
+        }
 
-.acknowledgment-content p {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #555;
-}
+        .acknowledgment-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+        }
 
-@media (max-width: 768px) {
-    .submission-card {
-        padding: 25px;
-    }
-    .submission-card .card-header {
-        font-size: 1.6rem;
-    }
-}
+        /* Responsive Columns for Topics List */
+        .topics-list-container {
+            columns: 2;
+            column-gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+        }
+        
+        @media (max-width: 768px) {
+            .submission-card {
+                padding: 25px;
+            }
+            .submission-card .card-header {
+                font-size: 1.6rem;
+            }
+            .topics-list-container {
+                columns: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -133,31 +144,53 @@
 
 <section class="section">
     <h2 class="section-title reveal-text">Topics of Interest</h2>
-<p style="text-align:center; max-width:800px; margin:0 auto 40px;" class="reveal-text">
-    CVIP 2026 invites original research contributions. Proceedings will be published in <strong>Springer LNCS</strong>.
-</p>
+    <p style="text-align:center; max-width:800px; margin:0 auto 20px;" class="reveal-text">
+        CVIP 2026 invites original research contributions. Proceedings will be published in <strong>Springer LNCS</strong>.
+    </p>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
-        <div class="reveal-text">
-            <div class="group-title">Technical Tracks</div>
-            <ul style="list-style: none; line-height: 2.2; padding-left: 10px;">
-                <li>✅ AI / Machine Learning for CV & IP</li>
-                <li>✅ Computational Imaging and Emerging Technologies</li>
-                <li>✅ Computer Vision / Pattern Recognition</li>
-                <li>✅ Image / Video Processing</li>
-                <li>✅ Image Biometrics / Forensics</li>
-                <li>✅ Medical / Remote Sensing Applications</li>
-            </ul>
-        </div>
-        <div class="reveal-text">
-            <div class="group-title">Workshop Themes</div>
-            <ul style="list-style: none; line-height: 2.2; padding-left: 10px;">
-                <li>🔹 Vision for Healthcare and Medical Informatics</li>
-                <li>🔹 Vision in Agriculture</li>
-                <li>🔹 Vision in Smart Cities and Urban Planning</li>
-                <li>🔹 Hardware and Architectures for Vision</li>
-            </ul>
-        </div>
+    <p style="text-align:center; max-width:900px; margin:0 auto 30px; font-weight:500;" class="reveal-text">
+        Topics of interest cover all aspects of computer vision and image processing including, but not limited to:
+    </p>
+
+    <div class="reveal-text topics-list-container">
+        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
+            <li>AI-Powered Image Analysis / Computer Vision</li>
+            <li>Biometrics, Forensics, Content Protection</li>
+            <li>Compressed Image/ Video Analytics</li>
+            <li>Computational Imaging</li>
+            <li>Datasets and Evaluation</li>
+            <li>Deep Learning for Computer Vision</li>
+            <li>Document and Synthetic Visual Processing</li>
+            <li>Document Image Analysis</li>
+            <li>Explainable AI / Gen AI for Computer Vision</li>
+            <li>Face, Iris, Emotion, Sign Language and Gesture Recognition</li>
+            <li>Human Computer Interaction</li>
+            <li>Image Restoration/Super Resolution</li>
+            <li>Image/ Video Processing for Autonomous Vehicles / Motion / Tracking</li>
+            <li>Image/ Video Retrieval / Forensics</li>
+            <li>Image/ Video Scene Understanding</li>
+            <li>Image/ Video Security and Quality Assessment</li>
+            <li>Medical Image Analysis</li>
+            <li>Pattern Recognition / Activity Detection</li>
+            <li>Quantum Computer Vision</li>
+            <li>Remote Sensing, Hyperspectral Image Processing</li>
+            <li>Segmentation and Shape Representation</li>
+            <li>Vision based Human Gait Analysis</li>
+            <li>Visual Sensor Hardware, Visual Surveillance</li>
+            <li>3D/X-ray/Thermal Image/Video Processing</li>
+        </ul>
+    </div>
+
+    <div class="reveal-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <div class="group-title" style="display: inline-block; padding: 10px 30px;">Technical Tracks</div>
+        <ul style="list-style: none; line-height: 2.2; padding-left: 0; margin-top: 20px;">
+            <li>✅ AI / Machine Learning for CV & IP</li>
+            <li>✅ Computational Imaging and Emerging Technologies</li>
+            <li>✅ Computer Vision / Pattern Recognition</li>
+            <li>✅ Image / Video Processing</li>
+            <li>✅ Image Biometrics / Forensics</li>
+            <li>✅ Medical / Remote Sensing Applications</li>
+        </ul>
     </div>
 </section>
 
@@ -165,7 +198,7 @@
     <div class="submission-card reveal-text">
         <h2 class="card-header">Submission Portal</h2>
         <p>Authors can submit their papers through Microsoft CMT online submission system.</p>
-        <p class="portal-date"><strong>Portal opens:</strong>Will be Updated Soon</p>
+        <p class="portal-date"><strong>Portal opens:</strong> Will be Updated Soon</p>
         <a href="#" class="btn btn-portal">Go to Submission Portal</a>
     </div>
 
