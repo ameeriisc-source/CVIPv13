@@ -38,7 +38,29 @@ a:hover { color: var(--secondary-color); }
     z-index: 1000; padding: 0 3%; height: var(--nav-height);
     display: flex; justify-content: space-between; align-items: center;
 }
-.logo { font-size: 1.6rem; font-weight: 700; color: var(--white); letter-spacing: 1px; white-space: nowrap; font-family: 'Montserrat', sans-serif; }
+/* --- NAVBAR LOGO UPDATES --- */
+
+/* Update the existing .logo class to align image and text */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    /* Add Flexbox for alignment */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spacing between image and text */
+}
+
+/* Add style for the new SVG logo image */
+.nav-logo-img {
+    height: 45px; /* Adjust height to fit nicely within the 80px navbar */
+    width: auto;
+    /* This filter turns a black SVG into a pure white SVG to contrast with the dark navbar */
+    filter: brightness(0) invert(1); 
+}
 .nav-links { list-style: none; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; font-family: 'Montserrat', sans-serif; }
 .nav-links > li { position: relative; }
 .nav-links li a { font-weight: 500; font-size: 1rem; color: #e0e0e0; padding: 10px 12px; display: block; white-space: nowrap; font-family: 'Montserrat', sans-serif; }
@@ -195,3 +217,4 @@ html { scroll-behavior: smooth; }
     .marquee-content { font-size: 0.85rem; }
     .theme-box { font-size: 1rem; padding: 10px; }
 }
+
