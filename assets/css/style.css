@@ -56,7 +56,7 @@ a:hover { color: var(--secondary-color); }
 
 /* Add style for the new SVG logo image */
 .nav-logo-img {
-    height: 50px; /* Adjust height to fit nicely within the 80px navbar */
+    height: 70px; /* Adjust height to fit nicely within the 80px navbar */
     width: auto;
     /* This filter turns a black SVG into a pure white SVG to contrast with the dark navbar */
     filter: brightness(0) invert(1); 
@@ -217,6 +217,7 @@ html { scroll-behavior: smooth; }
     .marquee-content { font-size: 0.85rem; }
     .theme-box { font-size: 1rem; padding: 10px; }
 }
+
 
 
 
