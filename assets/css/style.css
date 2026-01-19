@@ -258,3 +258,7 @@ html { scroll-behavior: smooth; }
 }
 
 
+/* Add this class to turn black logos into white logos */
+.logo-white {
+    filter: brightness(0) invert(1);
+}
