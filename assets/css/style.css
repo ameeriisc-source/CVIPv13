@@ -222,15 +222,15 @@ html { scroll-behavior: smooth; }
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between logos and text */
+    gap: 15px;
 }
 
 .nav-logo {
-    height: 50px; /* Fits nicely within the 80px navbar */
+    height: 50px;
     width: auto;
-    background: white; /* Optional: Adds white bg if logos are transparent/dark */
-    padding: 2px;
-    border-radius: 4px;
+    background: transparent; /* Removed white background */
+    padding: 0;              /* Removed padding */
+    border-radius: 0;
 }
 
 .logo-text {
@@ -247,9 +247,6 @@ html { scroll-behavior: smooth; }
     .logo-text { font-size: 1.2rem; }
     .logo-container { gap: 8px; }
 }
-
-
-
 
 
 
