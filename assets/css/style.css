@@ -248,5 +248,13 @@ html { scroll-behavior: smooth; }
     .logo-container { gap: 8px; }
 }
 
+/* --- FOOTNOTE STYLE --- */
+.disclaimer-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+    display: block;
+}
 
 
