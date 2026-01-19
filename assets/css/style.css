@@ -218,6 +218,37 @@ html { scroll-behavior: smooth; }
     .theme-box { font-size: 1rem; padding: 10px; }
 }
 
+/* --- UPDATED LOGO SECTION --- */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logos and text */
+}
+
+.nav-logo {
+    height: 50px; /* Fits nicely within the 80px navbar */
+    width: auto;
+    background: white; /* Optional: Adds white bg if logos are transparent/dark */
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 480px) {
+    .nav-logo { height: 35px; }
+    .logo-text { font-size: 1.2rem; }
+    .logo-container { gap: 8px; }
+}
+
+
 
 
 
