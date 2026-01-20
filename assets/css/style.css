@@ -262,3 +262,23 @@ html { scroll-behavior: smooth; }
 .logo-white {
     filter: brightness(0) invert(1);
 }
+
+/* --- MEMBER PHOTO STYLING --- */
+.member-photo {
+    width: 150px;         /* Fixed width */
+    height: 150px;        /* Fixed height (must match width for a perfect circle) */
+    border-radius: 50%;   /* Creates the circular shape */
+    object-fit: cover;    /* KEY PROPERTY: This scales and crops the image to fill the circle without stretching */
+    margin-bottom: 15px;  /* Space between photo and name */
+    border: 4px solid #f8f9fa; /* A light border */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* A subtle shadow for depth */
+}
+
+/* Optional: Ensure the card layout handles the centered content nicely */
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* ... keep your other member-card styles like padding, background, etc. ... */
+}
