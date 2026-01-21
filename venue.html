@@ -5,6 +5,40 @@
     <title>Venue | CVIP 2026</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/main.js"></script>
+    <style>
+        .travel-card {
+            background: #fff;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+        .travel-mode-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .fare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .fare-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+        .fare-table td:last-child {
+            font-weight: 600;
+            text-align: right;
+            color: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
 
@@ -12,7 +46,6 @@
     <div class="logo-container">
         <img src="assets/images/nitc.svg" alt="NITC" class="nav-logo">
         <img src="assets/images/ntnu.svg" alt="NTNU" class="nav-logo">
-        
         <a href="index.html" class="logo-text">CVIP 2026</a>
     </div>
 
@@ -31,8 +64,8 @@
             <ul class="dropdown-content">
                 <li><a href="committee.html">Organizing Committee</a></li>
                 <li><a href="steering-committee.html">Steering Committee</a></li>
-                <li><a href="advisory.html#international">International Advisory Committee</a></li>
-                <li><a href="advisory.html#national">National Advisory Committee</a></li>
+                <li><a href="advisory.html">International Advisory Committee</a></li>
+                <li><a href="national-advisory.html">National Advisory Committee</a></li>
             </ul>
         </li>
 
@@ -41,12 +74,13 @@
             <ul class="dropdown-content">
                 <li><a href="cfp.html">Topics & Tracks</a></li>
                 <li><a href="author-guidelines.html">Author Guidelines</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </li>
 
-        <li><a href="sponsorship.html">Sponsorship</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
 
-        <li><a href="venue.html">Venue</a></li>
+        <li><a href="venue.html" class="active">Venue</a></li>
         <li><a href="important-dates.html">Dates</a></li>
         <li><a href="registration.html">Registration</a></li>
 
@@ -62,7 +96,9 @@
         </li>
     </ul>
 </nav>
+
 <div class="marquee"><div class="marquee-content">📢 Paper submission opens on 26 January 2026! &nbsp;&bull;&nbsp; 📅 Conference Dates: Dec 9–12, 2026 &nbsp;&bull;&nbsp; 📍 Jointly Organized by NIT Calicut & NTNU Norway</div></div>
+
 <div class="page-hero"><h1>Venue & Location</h1></div>
 
 <section class="section">
@@ -72,7 +108,44 @@
     </div>
 </section>
 
-<section class="section" style="background: #f0f4f8;">
+<section class="section" style="background: #eef2f5;">
+    <h2 class="section-title reveal-text">How to Reach NIT Calicut</h2>
+    <div class="reveal-text" style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        <div class="travel-card">
+            <div class="travel-mode-title">✈️ By Air</div>
+            <p>The nearest airport is <strong>Calicut International Airport (CCJ)</strong>, located approximately 45 km from the campus.</p>
+            <table class="fare-table">
+                <tr>
+                    <td>Taxi to NITC</td>
+                    <td>~ ₹ 1200</td>
+                </tr>
+                <tr>
+                    <td>Auto Rickshaw to NITC</td>
+                    <td>~ ₹ 800</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="travel-card">
+            <div class="travel-mode-title">🚆 By Train</div>
+            <p>The nearest railway station is <strong>Kozhikode (Calicut) Railway Station (CLT)</strong>, located about 22 km from the campus.</p>
+            <table class="fare-table">
+                <tr>
+                    <td>Taxi to NITC</td>
+                    <td>~ ₹ 800</td>
+                </tr>
+                <tr>
+                    <td>Auto Rickshaw to NITC</td>
+                    <td>~ ₹ 600</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
     <h2 class="section-title reveal-text">Historical Significance of Calicut (Kozhikode)</h2>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 1000px; margin: 0 auto;">
         <div class="reveal-text" style="text-align: justify;">
@@ -109,7 +182,8 @@
         <div class="footer-col"><h4>Links</h4><ul style="list-style:none;"><li><a href="cfp.html">Call for Papers</a></li><li><a href="registration.html">Registration</a></li><li><a href="venue.html">Venue</a></li></ul></div>
         <div class="footer-col"><h4>Contact</h4><p>Email: cvip2026@nitc.ac.in</p></div>
     </div>
-    <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid #333;">&copy; 2026 CVIP Conference.</div>
+    <div style="text-align:center; margin-top: 30px; font-size: 0.85rem; color: #aaa; font-style: italic;">* Proceedings publication in Springer LNCS is subject to approval.</div>
+    <div style="text-align:center; margin-top:20px; padding-top:20px; border-top:1px solid #333;">&copy; 2026 CVIP Conference.</div>
 </footer>
 </body>
 </html>
