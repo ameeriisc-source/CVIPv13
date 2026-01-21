@@ -6,10 +6,53 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/main.js"></script>
     <style>
-        .sponsor-level-title { text-align: center; margin: 40px 0 20px; color: var(--secondary-color); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .sponsor-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 50px; }
-        .sponsor-logo { max-width: 250px; height: auto; filter: grayscale(100%); opacity: 0.8; transition: all 0.3s; }
-        .sponsor-logo:hover { filter: none; opacity: 1; transform: scale(1.05); }
+        .sponsor-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 50px; 
+            margin-top: 40px; 
+            margin-bottom: 50px; 
+        }
+        
+        /* Style for image logos */
+        .sponsor-logo { 
+            max-width: 280px; 
+            max-height: 150px; 
+            height: auto; 
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        .sponsor-logo:hover { 
+            transform: scale(1.05); 
+        }
+
+        /* Style for text-based sponsors (like Capstrain) */
+        .sponsor-text-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            height: 120px; /* Fixed height to look like a logo box */
+            background-color: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            color: var(--primary-color);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .sponsor-text-card:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            color: var(--secondary-color);
+        }
     </style>
 </head>
 <body>
@@ -75,17 +118,16 @@
 
 <section class="section">
     <div class="about-container">
-        <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem;">
-            We are grateful for the support of our technical and financial sponsors.
-        </p>
-
-        <h3 class="sponsor-level-title">Technical Sponsors</h3>
+        
         <div class="sponsor-grid">
-            <img src="assets/images/nitc.png" alt="NIT Calicut" class="sponsor-logo">
-            <img src="assets/images/ntnu.svg" alt="NTNU Norway" class="sponsor-logo">
+            <img src="assets/images/capsnet.png" alt="Capsnetwork Project" class="sponsor-logo">
+
+            <div class="sponsor-text-card">
+                Capstrain Project
+            </div>
         </div>
 
-        </div>
+    </div>
 </section>
 
 <footer>
