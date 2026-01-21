@@ -338,3 +338,28 @@ html { scroll-behavior: smooth; }
     filter: none !important;
     opacity: 1 !important;
 }
+
+/* =========================================
+   LOGO COLOR FIX (CRITICAL)
+   ========================================= */
+
+/* 1. Force all nav logos to show original colors (Black/Blue/etc.) */
+.nav-logo, 
+img.nav-logo, 
+.logo-white {
+    filter: none !important;  /* Removes any white/color filters */
+    -webkit-filter: none !important;
+    opacity: 1 !important;
+    background: transparent !important;
+}
+
+/* 2. Ensure container allows original colors */
+.logo-container {
+    background: transparent !important;
+}
+
+/* 3. Ensure Marquee stays Blue */
+.marquee {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+}
