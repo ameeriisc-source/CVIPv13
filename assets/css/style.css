@@ -363,3 +363,13 @@ img.nav-logo,
     background: var(--primary-color) !important;
     color: #ffffff !important;
 }
+
+/* =========================================
+   FORCE NITC LOGO TO BLACK
+   ========================================= */
+
+/* Target only the NITC image and force it to solid black */
+img[src*="nitc"] {
+    filter: brightness(0) !important;  /* Turns the logo pixels to black */
+    opacity: 1 !important;             /* Removes any transparency/greyness */
+}
