@@ -321,3 +321,20 @@ html { scroll-behavior: smooth; }
 .logo-white {
     filter: none !important;
 }
+
+/* =========================================
+   FINAL COLOR CORRECTIONS
+   ========================================= */
+
+/* 1. Change Running Bar (Marquee) to Dark Blue */
+.marquee {
+    background: var(--primary-color) !important; /* Changes Orange to Blue */
+    color: #ffffff !important;
+}
+
+/* 2. FORCE LOGOS TO ORIGINAL COLORS 
+   (This ensures they are not white, even if the class remains in HTML) */
+.nav-logo, .logo-white {
+    filter: none !important;
+    opacity: 1 !important;
+}
