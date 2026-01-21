@@ -282,3 +282,42 @@ html { scroll-behavior: smooth; }
     text-align: center;
     /* ... keep your other member-card styles like padding, background, etc. ... */
 }
+
+
+/* =========================================
+   OVERRIDE: WHITE NAVIGATION BAR STYLES
+   ========================================= */
+
+/* 1. Make Navbar Background White */
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+/* 2. Turn Nav Links Dark Blue */
+.nav-links li a {
+    color: var(--primary-color) !important; /* Force dark blue */
+    font-weight: 600;
+}
+
+/* 3. Keep Hover Color Orange */
+.nav-links li a:hover, 
+.nav-links li a.active {
+    color: var(--secondary-color) !important;
+}
+
+/* 4. Turn Text Logo ("CVIP 2026") Dark Blue */
+.logo-text {
+    color: var(--primary-color);
+}
+
+/* 5. Turn Mobile Hamburger Menu Dark Blue */
+.mobile-menu-toggle span {
+    background: var(--primary-color);
+}
+
+/* 6. RESET LOGO COLORS 
+   (In case 'logo-white' class is still in HTML, this turns off the white filter) */
+.logo-white {
+    filter: none !important;
+}
