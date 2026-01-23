@@ -373,3 +373,39 @@ img[src*="nitc"] {
     filter: brightness(0) !important;  /* Turns the logo pixels to black */
     opacity: 1 !important;             /* Removes any transparency/greyness */
 }
+
+/* Circular Image Styling */
+.member-photo-container {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #eee; /* Optional border */
+}
+
+.member-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    display: block;
+}
+
+/* Link Styling */
+.member-links {
+    margin-top: 10px;
+}
+
+.member-links a {
+    text-decoration: none;
+    color: #004a99; /* Adjust based on your theme */
+    margin: 0 8px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.member-links a:hover {
+    color: #ff9900;
+}
+
+/* Ensure FontAwesome is loaded in your <head> for icons */
